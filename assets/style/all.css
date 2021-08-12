@@ -1,0 +1,214 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* 全域 border box */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/*RWD ABOVE*/
+body {
+  font-family: "Lato", "Roboto Mono", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.block {
+  display: block; }
+
+.inline {
+  display: inline; }
+
+.inline-block {
+  display: inline-block; }
+
+.content-keypoint {
+  background: #CED4DA;
+  color: #198754;
+  padding: 0 4px; }
+
+.sidebar {
+  background: #F8F9FA;
+  border: 1px solid #000;
+  height: 100vh;
+  width: 296px;
+  padding: 32px; }
+  .sidebar .logo {
+    margin-bottom: 32px; }
+  .sidebar .sidebar-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 30px; }
+    .sidebar .sidebar-menu a:hover {
+      color: #198754; }
+  .sidebar .user .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px; }
+  .sidebar .user .user-name h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-weight: bold; }
+  .sidebar .user .user-name span {
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C757D; }
+
+.test {
+  background: #000;
+  width: 100px;
+  height: 100px; }
+
+.main-right {
+  height: 100vh;
+  padding-top: 32px;
+  margin-left: 32px; }
+  .main-right .main-right-header {
+    width: 920px;
+    margin-bottom: 44px; }
+    .main-right .main-right-header h2 {
+      font-size: 24px;
+      line-height: 33px;
+      font-weight: bold;
+      margin-right: 48px; }
+    .main-right .main-right-header .course-select h3 {
+      font-weight: bold;
+      margin-right: 8px; }
+    .main-right .main-right-header .course-select span {
+      color: #198754; }
+    .main-right .main-right-header .rightside-nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      padding-left: 24px; }
+      .main-right .main-right-header .rightside-nav a:hover {
+        color: #198754; }
+  .main-right .main-right-content .leftmenu .leftmenu-drop {
+    padding-bottom: 6px; }
+    .main-right .main-right-content .leftmenu .leftmenu-drop h3 {
+      margin-right: 8px; }
+    .main-right .main-right-content .leftmenu .leftmenu-drop span {
+      color: #198754; }
+  .main-right .main-right-content .leftmenu .leftmenu-content {
+    width: 320px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000; }
+    .main-right .main-right-content .leftmenu .leftmenu-content ul li {
+      border-bottom: 1px solid #000;
+      padding: 12px; }
+      .main-right .main-right-content .leftmenu .leftmenu-content ul li .assignment-time {
+        text-align: right; }
+      .main-right .main-right-content .leftmenu .leftmenu-content ul li span,
+      .main-right .main-right-content .leftmenu .leftmenu-content ul li h5 {
+        font-size: 12px;
+        line-height: 24px; }
+      .main-right .main-right-content .leftmenu .leftmenu-content ul li .title {
+        font-size: 16px;
+        font-weight: bold; }
+      .main-right .main-right-content .leftmenu .leftmenu-content ul li .name {
+        color: #6c757d; }
+  .main-right .main-right-content .rightmenu {
+    width: 584px;
+    height: 584px; }
+    .main-right .main-right-content .rightmenu .comment {
+      margin-bottom: 6px;
+      text-align: right;
+      font-size: 12px;
+      line-height: 24px;
+      color: #6c757d; }
+    .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-header {
+      border: 1px solid #ced4da;
+      background: #f8f9fa;
+      padding: 12px; }
+      .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-header .header-left span {
+        font-size: 12px;
+        line-height: 24px; }
+      .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-header .title {
+        font-size: 16px;
+        font-weight: bold; }
+      .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-header .header-right a {
+        margin-right: 5px;
+        color: #000; }
+        .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-header .header-right a:hover {
+          color: #198754; }
+    .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-msg .user-feedback {
+      padding: 16px; }
+    .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-msg .user-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 25px;
+      margin-right: 8px; }
+    .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-msg .user-name h3 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-weight: bold; }
+    .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-msg .user-name span {
+      font-size: 12px;
+      line-height: 24px;
+      color: #6c757d; }
+    .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-msg .feedback-content p {
+      font-size: 14px;
+      line-height: 21px;
+      width: 488px; }
+    .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-msg .feedback-content .submit {
+      margin-left: 40px; }
+    .main-right .main-right-content .rightmenu .rightmenu-content .rightmenu-content-msg ul li {
+      border-bottom: 1px solid #ced4da;
+      border-left: 1px solid #ced4da;
+      border-right: 1px solid #ced4da; }
+    .main-right .main-right-content .rightmenu .rightmenu-footer .chevron_left {
+      margin-right: 23px; }
+
+/*# sourceMappingURL=all.css.map */
