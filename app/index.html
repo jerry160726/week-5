@@ -1,0 +1,164 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+
+
+
+<div class="main-right container">
+    <div class="main-right-header d-flex align-items-center">
+        <h2>Assignment</h2>
+        <div class="course-select d-flex me-auto">
+            <h3>All Courses</h3>
+            <span class="material-icons">expand_more</span>
+        </div>
+        <ul class="rightside-nav list-unstyled d-flex">
+            <li><a href="#" class="block"><span class=" material-icons block">search</span></a></li>
+            <li><a href="#" class="block"><span class="material-icons block">notifications_active</span></a></li>
+        </ul>
+    </div>
+
+    <div class="main-right-content d-flex">
+        <div class="leftmenu me-3">
+            <div class="leftmenu-drop d-flex">
+                <h3>All(4)</h3>
+                <span class="material-icons">expand_more</span>
+            </div>
+            <div class="leftmenu-content">
+                <ul>
+                    <li class="d-flex justify-content-between">
+                        <div class="assignment">
+                            <span>Chapter Assignment 2</span>
+                            <h4 class="title">Please check this file…</h4>
+                        </div>
+                        <div class="assignment-time">
+                            <span class="time">4 hrs ago</span>
+                            <h5 class="name">Emily Wang</h5>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="assignment">
+                            <span>Chapter Assignment 1</span>
+                            <h4 class="title">My Homework</h4>
+                        </div>
+                        <div class="assignment-time">
+                            <span class="time">12 hrs ago</span>
+                            <h5 class="name">David Xu</h5>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="assignment">
+                            <span>Final Assignment</span>
+                            <h4 class="title">Have a problem with this…</h4>
+                        </div>
+                        <div class="assignment-time">
+                            <span class="time">18 hrs ago</span>
+                            <h5 class="name">Tony Wei</h5>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="assignment">
+                            <span>Final Assignment</span>
+                            <h4 class="title">Did I do it right?</h4>
+                        </div>
+                        <div class="assignment-time">
+                            <span class="time">19 hrs ago</span>
+                            <h5 class="name">Christina Lin</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightmenu">
+            <h4 class="comment">2 comments</h4>
+            <div class="rightmenu-content">
+
+                <div class="rightmenu-content-header d-flex align-items-center">
+                    <div class="header-left me-auto">
+                        <span>Chapter Assignment 2 / HTML&CSS</span>
+                        <h4 class="title">Please check this file for me, thanks!</h4>
+                    </div>
+
+                    <div class="header-right">
+                        <a href="#" class="block">
+                            <i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+
+                <div class="rightmenu-content-msg">
+                    <ul>
+                        <li>
+                            <div class="user-feedback">
+                                <div class="user d-flex">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true"
+                                        alt="Emily Wang" class="user-icon block">
+                                    <div class="user-name">
+                                        <h3>Emily Wang</h3>
+                                        <span>10:38 AM (4 hours ago)</span>
+                                    </div>
+                                </div>
+                                <div class="feedback-content">
+                                    <p class="container mb-3">Hi Teacher, the attached file is my homework of
+                                        chapter 2.
+                                        And here comes a
+                                        question: Why in the following code the height of the <span
+                                            class="content-keypoint">div</span> is bigger than the
+                                        height of the <span class="content-keypoint">img</span> ? There is a gap
+                                        below the image, but it doesn’t seems to
+                                        be a
+                                        padding/margin.
+                                        <br>
+                                        What is the gap or extra space below image?
+                                    </p>
+                                    <input type="submit" value="HW-2-David.zip" class="submit">
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="user-feedback">
+                                <div class="user d-flex">
+                                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+                                        alt="Andy Chen (You)" class="user-icon block">
+                                    <div class="user-name">
+                                        <h3>Andy Chen (You)</h3>
+                                        <span>13:24 AM (1 hours ago)</span>
+                                    </div>
+                                </div>
+                                <div class="feedback-content">
+                                    <p class="container">
+                                        Hi David, by default, an image is rendered inline, like a
+                                        letter so it sits on the same line that a, b, c and d sit on. There is space
+                                        below that line for the descenders you find on letters like g, j, p and q.
+                                        <br></br>
+                                        You can:
+                                        <br></br>
+                                        • adjust the <span class="content-keypoint">vertical-align</span> of the
+                                        image to position it elsewhere
+                                        (e.g. the <span class="content-keypoint">middle</span>) or 　
+                                        <br></br>
+                                        • change the <span class="content-keypoint">display</span> so it isn’t
+                                        inline.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rightmenu-footer d-flex pt-3">
+                    <span class="material-icons-outlined chevron_left">chevron_left</span>
+                    <span class="material-icons-outlined me-auto">chevron_right</span>
+                    <button type="button" class="btn btn-outline-success me-3">Mark as read</button>
+                    <button type="button" class="btn btn-success">Reply</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
